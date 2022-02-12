@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 187px;
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    height: 180px;
+
+    &__title {
+      font-size: 45px;
+      line-height: 53px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 228px;
+
+    &__title {
+      font-size: 38px;
+      line-height: 44px;
+      max-width: 271px;
+      text-align: center;
+    }
+  }
+}

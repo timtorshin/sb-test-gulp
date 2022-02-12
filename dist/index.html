@@ -4,14 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220212052722">
+  <meta name="author" content="Timofei Torshin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@300;400&family=Roboto:wght@400;700&display=swap&_v=20220212214312" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220212214312">
   <title>Test Work</title>
 </head>
 <body>
-  <header></header>
-  <main>
+  <header class="header">
+  <h1 class="header__title">Стоимость обучения</h1>
+</header>
+  <main class="main">
+    <section class="price">
+  <div class="price__info">
+    <div class="price__info-card">
+      <span class="price__info-card-cost price__info-card-cost-first">50 000&#8381;</span>
+      <p class="price__info-card-text price__info-card-text-first">Полная стоимость курса</p>
+    </div>
+    <div class="price__info-card">
+      <span class="price__info-card-cost price__info-card-cost-second">2 900&#8381;</span>
+      <p class="price__info-card-text price__info-card-text-second">Рассрочка без первого взноса</p>
+    </div>
+    <div class="price__info-card">
+      <span class="price__info-card-cost price__info-card-cost-third">29 000&#8381;</span>
+      <p class="price__info-card-text price__info-card-text-third">Для первых 20-ти</p>
+    </div>
+  </div>
+  <div class="price__label">
+    <span class="price__label-text">скидка</span>
+    <span class="price__label-percent">40%</span>
+    <span class="price__label-description">первым 20</span>
+  </div>
+</section>
+    <section class="register">
+  <div class="register__container">
+    <h2 class="register__title">Запишитесь на курс</h2>
+    <ul class="register__list">
+      <li class="register__list-item">Телефон</li>
+      <li class="register__list-item">Телефон</li>
+      <li class="register__list-item">Телефон</li>
+      <li class="register__list-item">Телефон</li>
+    </ul>
+    <div class="register__info">
+      <p class="register__info-text">Старт курса: <span>7 сентября</span></p>
+      <p class="register__info-text">Осталось: <span>19 мест</span></p>
+    </div>
+    <form class="register__form">
+      <input class="register__form-input" type="text" placeholder="Имя" minlength="2" maxlength="30" required>
+      <input class="register__form-input" type="text" pattern="[7-9]{1}[0-9]{10}" placeholder="Телефон" required>
+      <input class="register__form-input" type="tel" placeholder="Email" size="30" required>
+      <div class="register__form-submit">
+        <button class="register__form-button">записаться</button>
+        <div class="register__form-check">
+          <button class="register__form-check-btn"></button>
+          <p class="register__form-check-text">Я согласен с условиями обработки <span>персональных данных</span></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
   </main>
   <footer></footer>
-  <script src="js/app.min.js?_v=20220212052722"></script>
+  <script src="js/app.min.js?_v=20220212214312"></script>
 </body>
 </html>
