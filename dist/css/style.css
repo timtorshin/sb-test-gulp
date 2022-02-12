@@ -441,6 +441,141 @@ button:hover {
     max-width: 271px;
     text-align: center;
   }
+
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto 55px;
+  }
+
+  .price {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .price__info {
+    row-gap: 10px;
+    padding-top: 20px;
+  }
+
+  .price__info-card:last-child {
+    padding-top: 20px;
+  }
+
+  .price__info-card-text-second {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .price__info-card-text-third {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .price__info-card-cost {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -2px;
+    mix-blend-mode: normal;
+  }
+
+  .price__info-card-cost-first {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .price__info-card-cost-second {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .price__info-card-cost-third {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .price__label {
+    top: -50px;
+  }
+
+  .register {
+    width: 100%;
+  }
+
+  .register__container {
+    padding: 40px 0 55px;
+    max-width: 270px;
+    width: 100%;
+  }
+
+  .register__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    max-width: 200px;
+  }
+
+  .register__list {
+    padding-bottom: 28px;
+  }
+
+  .register__list-item {
+    line-height: 26px;
+  }
+
+  .register__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+    row-gap: 10px;
+  }
+
+  .register__form-input {
+    padding: 15px 28px;
+  }
+
+  .register__form-submit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    row-gap: 48px;
+  }
+
+  .register__form-button {
+    padding: 24px 72px;
+    line-height: 18px;
+  }
+
+  .register__form-check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+
+  .register__form-check-btn {
+    border: 2px solid #E6E8F0;
+    background-color: #FFF;
+    background-image: url("../../img/blue-check-icon.svg");
+  }
+
+  .register__form-check-text {
+    max-width: 227px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {

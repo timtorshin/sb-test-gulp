@@ -140,3 +140,60 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .price {
+    width: 100%;
+    min-height: 400px;
+
+    &__info {
+      row-gap: 10px;
+      padding-top: 20px;
+
+      &-card {
+        &:last-child {
+          padding-top: 20px;
+        }
+
+        &-text {
+          &-second {
+            font-size: 18px;
+            line-height: 21px;
+          }
+
+          &-third {
+            font-size: 15px;
+            line-height: 18px;
+          }
+        }
+
+        &-cost {
+          font-family: 'Roboto Slab', serif;
+          font-style: normal;
+          font-weight: 300;
+          letter-spacing: -2px;
+          mix-blend-mode: normal;
+  
+          &-first {
+           font-size: 36px;
+           line-height: 47px;
+          }
+  
+          &-second {
+           font-size: 56px;
+           line-height: 64px;
+          }
+  
+          &-third {
+           font-size: 40px;
+           line-height: 53px;         
+          }
+        }
+      }
+    }
+  
+    &__label {
+      top: -50px;
+    }
+  }
+}
