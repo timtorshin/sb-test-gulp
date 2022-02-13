@@ -139,24 +139,77 @@ button:hover {
   font-weight: 300;
   letter-spacing: -2px;
   mix-blend-mode: normal;
+  position: relative;
 }
 
 .price__info-card-cost-first {
   font-size: 38px;
   line-height: 50px;
-  text-decoration: line-through;
   opacity: 0.4;
+  margin-right: 20px;
+}
+
+.price__info-card-cost-first::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/line-icon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 139px;
+  height: 26px;
+  top: 14px;
+  left: -6px;
+  color: #FFF;
+}
+
+.price__info-card-cost-first::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/ruble-third-icon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  top: 13px;
 }
 
 .price__info-card-cost-second {
   font-weight: 400;
   font-size: 80px;
   line-height: 106px;
+  margin-right: 30px;
+}
+
+.price__info-card-cost-second::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/ruble-second-icon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: 24px;
 }
 
 .price__info-card-cost-third {
   font-size: 50px;
   line-height: 66px;
+  margin-right: 24px;
+}
+
+.price__info-card-cost-third::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/ruble-third-icon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  top: 16px;
 }
 
 .no-webp .price__label{
@@ -489,14 +542,37 @@ button:hover {
     line-height: 47px;
   }
 
+  .price__info-card-cost-first::before {
+    left: -12px;
+  }
+
+  .price__info-card-cost-first::after {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+  }
+
   .price__info-card-cost-second {
     font-size: 56px;
     line-height: 64px;
   }
 
+  .price__info-card-cost-second::after {
+    width: 40px;
+    height: 40px;
+    top: 13px;
+  }
+
   .price__info-card-cost-third {
     font-size: 40px;
     line-height: 53px;
+    margin-right: 20px;
+  }
+
+  .price__info-card-cost-third::after {
+    width: 29px;
+    height: 29px;
+    top: 13px;
   }
 
   .price__label {
@@ -610,6 +686,10 @@ button:hover {
   .price__info-card-text-third {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  .price__info-card-cost-second {
+    margin-right: 48px;
   }
 
   .register {
